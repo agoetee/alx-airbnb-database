@@ -1,0 +1,2 @@
+CREATE TABLE User (user_id UUID PRIMARY KEY, first_name varchar(225) NOT NULL, last_name varchar(225) NOT NULL, email varchar(225) NOT NULL,password_hash varchar(225) NOT NULL,
+phone_number varchar(225) NULL, role ENUM("guest","host","admin") NOT NULL, created_at TIMESTAMP DEFAULT NOW())
